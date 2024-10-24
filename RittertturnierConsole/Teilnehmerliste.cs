@@ -15,22 +15,16 @@ namespace Ritterturnier
         }
         public void addTeilnehmer(Ritter teilnehmer)
         {
-            try
+            foreach (Teilnehmer t in _teilnehmerListe)
             {
-                foreach (Teilnehmer t in _teilnehmerListe)
+                if (teilnehmer._name == t._name)
                 {
-                    if (teilnehmer._name == t._name)
-                    {
-                        throw new NameSchonVorhandenException(teilnehmer._name + " ist schon vorhanden.");
-                    }
+                    throw new NameSchonVorhandenException(teilnehmer._name + " ist schon vorhanden.");
                 }
-                _teilnehmerListe.Add(teilnehmer);
             }
-            catch (NameSchonVorhandenException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            _teilnehmerListe.Add(teilnehmer);
         }
+
         public string listeAlleTeilnehmer()
         {
             String s = "";

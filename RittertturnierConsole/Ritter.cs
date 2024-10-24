@@ -13,6 +13,7 @@ namespace Ritterturnier
         public Waffe _waffe { get; set; }
         public int _id { get; set; }
         public static int _idIncrement = 1;
+        public Ritter() { }
         public Ritter(string name, string telefonnummer, string rufname) : base(name, telefonnummer)
         {
             _rufname = rufname;
@@ -41,7 +42,7 @@ namespace Ritterturnier
         }
         public string toString()
         {
-            string s = this.GetType().Name + " " + _id + "\t" + base.toString() + $"Rufname: {_rufname}\n";
+            string s = this.GetType().Name + " " + _id + "\t\t" + base.toString() + $"Rufname: {_rufname}\n";
             if (_waffe != null)
             {
                 s += $"\t\t{_waffe.toString()}";

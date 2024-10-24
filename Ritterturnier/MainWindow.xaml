@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ritterturnier"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="670" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="background.jpg" Stretch="Fill"></ImageBrush>
+    </Window.Background>
     <Grid>
+        <TextBox Name="ritterNameBox" HorizontalAlignment="Left" Margin="155,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="22"/>
+        <Label Content="Ritter" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="111" FontSize="36" Margin="0,69,0,0"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Height="31" Width="56" FontSize="16"/>
+        <TextBox Name="ritterRufnameBox" HorizontalAlignment="Left" Margin="155,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="21"/>
+        <Label Content="Rufname" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.157,0.564" Height="31" Width="74" FontSize="16"/>
+        <TextBox Name="ritterTelefonnummerBox" HorizontalAlignment="Left" Margin="155,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="22"/>
+        <Label Content="Telefonnummer" HorizontalAlignment="Left" Margin="10,206,0,0" VerticalAlignment="Top" Height="32" Width="124" FontSize="16"/>
+        <Button Name="buttonHinzufügen" Content="Hinzufügen" HorizontalAlignment="Left" Margin="155,582,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click"/>
+        <Label Content="Waffe" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="111" FontSize="36" Margin="0,254,0,0"/>
+        <TextBox Name="waffeBezeichnungBox" HorizontalAlignment="Left" Margin="155,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="22"/>
+        <Label Content="Bezeichnung" HorizontalAlignment="Left" Margin="10,316,0,0" VerticalAlignment="Top" Height="31" Width="101" FontSize="16"/>
+        <Label Content="Art" HorizontalAlignment="Left" Margin="10,352,0,0" VerticalAlignment="Top" Height="31" Width="101" FontSize="16"/>
+        <ComboBox x:Name="waffeArt" HorizontalAlignment="Left" Margin="155,358,0,0" VerticalAlignment="Top" Width="144">
+            <ComboBoxItem Content="Lanze"/>
+            <ComboBoxItem Content="Keule"/>
+            <ComboBoxItem Content="Schwert"/>
+        </ComboBox>
+        <Label Content="Knappe" HorizontalAlignment="Left" VerticalAlignment="Top" Height="57" Width="134" FontSize="36" Margin="0,396,0,0"/>
+        <TextBox Name="knappeNameBox" HorizontalAlignment="Left" Margin="155,459,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="22"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,453,0,0" VerticalAlignment="Top" Height="31" Width="56" FontSize="16"/>
+        <TextBox x:Name="knappeTelefonnummerBox" HorizontalAlignment="Left" Margin="155,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="22"/>
+        <Label Content="Telefonnummer" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Height="31" Width="124" FontSize="16"/>
+        <Label Content="Ausbildungsgrad" HorizontalAlignment="Left" Margin="10,525,0,0" VerticalAlignment="Top" Height="31" Width="138" FontSize="16"/>
+        <Slider Name="knappeGradSlider" Minimum="10"
+                Maximum="100"
+                Value="10"
+                TickFrequency="10"
+                IsSnapToTickEnabled="True"
+                TickPlacement="BottomRight"
+                Margin="155,525,483,77" />
+        <ScrollViewer Name="teilnehmerlisteOutput" Margin="334,94,28,116" Content="" Background="White" Opacity="0.85"/>
 
+        <Label Content="Ritterturnier" HorizontalAlignment="Center" VerticalAlignment="Top" Width="392" Height="76" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="72" FontFamily="Centaur" Margin="0,-5,0,0"/>
+        <TextBlock Name="actionOutputLabel" HorizontalAlignment="Left" Margin="334,551,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" Height="51" Background="White" Opacity="0.85"/>
     </Grid>
 </Window>
