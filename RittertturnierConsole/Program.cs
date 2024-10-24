@@ -1,24 +1,11 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using Ritterturnier;
 
-namespace Ritterturnier
+namespace RitterturnierConsole
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    partial class MainWindow : Window
+    internal class Program
     {
-        public MainWindow()
+        static void Main(string[] args)
         {
-            InitializeComponent();
             Waffe waffe = new Waffe("Waffe1", Waffenart.S);
             Knappe knappe = new Knappe("Knappe1", "93839473", 2);
             Ritter ritter = new Ritter("Ritter1", "97837492", "Herb");
@@ -29,7 +16,7 @@ namespace Ritterturnier
             ritter2.addKnappe(knappe);
             Teilnehmerliste teilnehmerliste = new Teilnehmerliste();
             teilnehmerliste.addTeilnehmer(ritter);
-            //teilnehmerliste.addTeilnehmer(ritter2);
+            teilnehmerliste.addTeilnehmer(ritter2);
             Console.WriteLine(teilnehmerliste.listeAlleTeilnehmer());
             FileManager fileManager = new FileManager();
             //fileManager.toFile(teilnehmerliste);

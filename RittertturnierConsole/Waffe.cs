@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ritterturnier
 {
-    class Waffe
+    public class Waffe
     {
         public string _bezeichnung { get; set; }
         public Waffenart _art { get; set; }

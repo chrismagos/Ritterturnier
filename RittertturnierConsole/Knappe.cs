@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ritterturnier
 {
-    class Knappe : Teilnehmer
+    public class Knappe : Teilnehmer
     {
         public int _ausbildungsgrad { get; set; }
         public Knappe(string name, string telefonnummer, int ausbildungsgrad) : base(name, telefonnummer)

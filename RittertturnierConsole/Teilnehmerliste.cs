@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ritterturnier
 {
-    class Teilnehmerliste
+    public class Teilnehmerliste
     {
         public List<Teilnehmer> _teilnehmerListe {  get; set; }
         public Teilnehmerliste()

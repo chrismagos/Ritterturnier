@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ritterturnier
 {
-    class Ritter : Teilnehmer
+    public class Ritter : Teilnehmer
     {
         public string _rufname { get; set; }
         public Knappe _knappe { get; set; }

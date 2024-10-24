@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritterturnier", "Ritterturnier\Ritterturnier.csproj", "{6FEFEAA4-9826-472C-B199-9A604B355274}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ritterturnier", "Ritterturnier\Ritterturnier.csproj", "{6FEFEAA4-9826-472C-B199-9A604B355274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RitterturnierConsole", "RittertturnierConsole\RitterturnierConsole.csproj", "{1CD7F598-F1AD-4F76-BB1B-D265CC43DD15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RitterturnierTests", "RitterturnierTests\RitterturnierTests.csproj", "{3B5E02BE-5D2E-4FB0-A8F9-C2BA3C89AE5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{6FEFEAA4-9826-472C-B199-9A604B355274}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FEFEAA4-9826-472C-B199-9A604B355274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FEFEAA4-9826-472C-B199-9A604B355274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD7F598-F1AD-4F76-BB1B-D265CC43DD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD7F598-F1AD-4F76-BB1B-D265CC43DD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD7F598-F1AD-4F76-BB1B-D265CC43DD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD7F598-F1AD-4F76-BB1B-D265CC43DD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B5E02BE-5D2E-4FB0-A8F9-C2BA3C89AE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5E02BE-5D2E-4FB0-A8F9-C2BA3C89AE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5E02BE-5D2E-4FB0-A8F9-C2BA3C89AE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5E02BE-5D2E-4FB0-A8F9-C2BA3C89AE5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
